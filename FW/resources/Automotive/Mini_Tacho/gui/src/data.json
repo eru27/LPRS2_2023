@@ -1,0 +1,9 @@
+{
+    "title": "My data",
+    "items": [
+      { "id": 1, "name": "duzina trajanja" },
+      { "id": 2, "name": "maksimalna brzina" },
+      { "id": 3, "name": "predjena daljina" },
+      { "id": 4, "name": "prosecna brzina" }
+    ]
+  }

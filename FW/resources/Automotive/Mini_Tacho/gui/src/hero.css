@@ -1,0 +1,40 @@
+.heroContainer{
+    background-color: rgb(101, 101, 252, 0.4);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.heroSection{
+    width: auto;
+}
+.heroImage{
+    height: 300px;
+    /* flex-direction: row;
+    display: flex; */
+}
+.imageWrap{
+    display:flex;
+    justify-content: start;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@keyframes moveRight {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: calc(100% - 100px); /* Adjust the width of the div as needed */
+    }
+  }
+  
+  .moving-div {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    padding-left: 20px;
+    width: 100px; /* Adjust the width of the div as needed */
+    height: 100px; /* Adjust the height of the div as needed */
+    background-color: none; /* Adjust the background color as needed */
+    animation: moveRight 7s linear infinite; /* Adjust the animation duration as needed */
+  }

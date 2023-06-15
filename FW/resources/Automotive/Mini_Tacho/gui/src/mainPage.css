@@ -1,0 +1,105 @@
+.headerNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.headerLogo{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #101010;
+}
+
+.siteHeader{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+.headerContainer {
+    box-sizing: border-box;
+    height: 64px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+.headerContainer.active{
+    background-color: white;
+
+}
+.mobileToggle{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+    .headerContainer {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    /* .headerNav.open{
+        align-items: start;
+    } */
+}
+@media screen and (max-width: 760px) {
+    .headerContainer {
+        padding-left: 14px;
+        padding-right: 14px;
+        width: 100%;
+    }
+    /* Mobile Menu */
+    .mobileToggle{
+        display: flex;
+    }
+    .headerNav {
+        box-sizing: border-box;
+        /* background-color: #FFE7FB; */
+        background-color: white;
+        padding: 24px;
+        position: fixed;
+        width: 100%;
+        top: -500px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        transition: 600ms;
+    }
+    .headerNav.open{
+        top: 64px;
+    }
+    .headerNav .navLink{
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-right: 0;
+    }
+    .navLink{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .headerContainer {
+        padding-left: 32px;
+        padding-right: 32px;
+        
+    }
+}
+@media screen and (max-width: 360px) {
+    .headerContainer {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}

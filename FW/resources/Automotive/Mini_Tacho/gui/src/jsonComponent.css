@@ -1,0 +1,12 @@
+.data{
+    text-decoration: none;
+    padding: 0;
+    margin-top: 0px;
+    padding-top: 500px;
+}
+
+.jsonItem{
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
