@@ -3,7 +3,7 @@ import { Line } from 'react-chartjs-2';
 
 const GraphComponent = () => {
   const [chartData, setChartData] = useState(null);
-  const jsonFilePath = '\\wsl.localhost\Ubuntu\home\anja\LPRS2\LPRS2_2023\FW\resources\Automotive\Mini_Tacho\PC_Handler\data.json';
+  const jsonFilePath = '\\wsl.localhost\\Ubuntu\\home\\anja\\LPRS2\\LPRS2_2023\\FW\\resources\\Automotive\\Mini_Tacho\\PC_Handler\\data.json';
 
   useEffect(() => {
     const fetchData = async () => {
