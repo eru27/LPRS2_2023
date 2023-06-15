@@ -3,6 +3,7 @@ import heroImage from'../src/resources/delivery.png';
 import MyJson from './jsonComponent';
 import GraphComponent from './graphComponent';
 import './jsonComponent.css'
+import '\\wsl.localhost\\Ubuntu\\home\\anja\\LPRS2\\LPRS2_2023\\FW\\resources\\Automotive\\Mini_Tacho\\PC_Handler\\data.json'
 
 function Hero() {
     const MovingDiv = () => {
@@ -25,10 +26,10 @@ function Hero() {
                 
                 </div>
                 <div className='col rightColumn'>
-                    <p className='jsonItem' >Duzina trajanja</p>
-                    <p className='jsonItem' >Maksimalna brzina</p>
-                    <p className='jsonItem' >Predjena daljina</p>
-                    <p className='jsonItem' >Prosecna brzina</p>
+                    <p className='jsonItem' >{time}</p>
+                    <p className='jsonItem' >{max_speed}</p>
+                    <p className='jsonItem' >{distance}</p>
+                    <p className='jsonItem' >{avg_speed}</p>
                 
                 </div>
                 </div>
