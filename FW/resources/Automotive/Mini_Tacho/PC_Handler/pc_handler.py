@@ -40,7 +40,7 @@ while line != 'FATAL: stdin closed':
     data["distace"] = data["avg_speed"] * (1000 / 60)
     data["speed"] = speed
 
-    with open("data.json", "w") as file:
+    with open("/mnt/d/Faks/22/LPRS2/LPRS2_2023/FW/resources/Automotive/Mini_Tacho/gui/data/data.json", "w") as file:
         file.write(json.dumps(data))
 
     
